@@ -43,3 +43,33 @@ pytest
 Run the application:
 
 python -m src.main
+
+## Deployment Preparation
+
+This project is prepared as a local command-line Python application.
+
+Deployment steps:
+
+1. Install Python 3
+2. Install dependencies using:
+   pip install -r requirements.txt
+3. Run the application:
+   python -m src.main
+
+## Data Handling and Conversion
+
+The system reads study notes from a local text file.
+
+The file reader tool converts the file contents into plain text strings.
+
+The keyword search tool processes the text line-by-line and returns matching results while preserving data consistency.
+
+## Deployment Strategy
+
+The current deployment strategy is a local command-line application.
+
+In future development, the system could also be deployed as:
+
+- a web application,
+- an API-based assistant,
+- a cloud-hosted study assistant service.

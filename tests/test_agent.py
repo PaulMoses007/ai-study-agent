@@ -10,3 +10,7 @@ def test_empty_input():
 
 def test_calculation():
     assert "15" in agent.answer("calculate: 10 + 5")
+
+
+def test_unknown_question():
+    assert "No relevant information" in agent.answer("banana")

@@ -116,3 +116,72 @@ The agent coordinates all tools and determines which operation should be execute
 ### Current Progress
 
 The project now includes functional implementation, modular structure, automated tests, and validation support. The next phase will focus on deployment preparation and additional testing scenarios.
+
+
+## Step 3 – 15.05.2026
+
+### Testing Process
+
+Testing was performed continuously during implementation.
+
+The testing process included:
+
+- manual functional testing,
+- automated testing using pytest,
+- validation testing,
+- error handling verification.
+
+The goal of testing was to verify that all tools and the agent workflow operate correctly.
+
+### Test Scenarios
+
+The following test scenarios were implemented:
+
+1. Calculator tool test  
+Input: "2 + 2"  
+Expected Result: "4"
+
+2. Invalid calculation test  
+Input: "abc"  
+Expected Result: invalid calculation message
+
+3. Keyword search test  
+Input keyword: "Python"  
+Expected Result: matching text line returned
+
+4. Empty input validation test  
+Input: empty string  
+Expected Result: validation warning message
+
+5. Agent calculation workflow test  
+Input: "calculate: 10 + 5"  
+Expected Result: calculation result returned
+
+6. Unknown question test  
+Input: "banana"  
+Expected Result: no relevant information message
+
+### Deployment Preparation
+
+The project was prepared as a local command-line Python application.
+
+Deployment preparation includes:
+
+- requirements.txt for dependencies,
+- startup instructions in README,
+- modular project structure,
+- clear execution instructions using python -m src.main.
+
+### Data Conversion and Porting
+
+The system reads data from local text files.
+
+The file reader converts file contents into text strings.
+
+The keyword search tool processes the text line-by-line while preserving consistency and correctness.
+
+Data is passed between components using standard Python string and list structures.
+
+### Current Progress
+
+The project now includes functional implementation, modular architecture, automated testing, deployment preparation, and documented workflows.
