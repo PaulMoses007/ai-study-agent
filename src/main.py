@@ -1,4 +1,4 @@
-from agent import StudyAgent
+from src.agent import StudyAgent
 
 
 def main():

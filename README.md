@@ -33,3 +33,13 @@ testing
 ## Current Status
 
 Step 1 completed: system designed, implemented, and tested.
+
+## Testing
+
+Run automated tests:
+
+pytest
+
+Run the application:
+
+python -m src.main
