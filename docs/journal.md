@@ -185,3 +185,107 @@ Data is passed between components using standard Python string and list structur
 ### Current Progress
 
 The project now includes functional implementation, modular architecture, automated testing, deployment preparation, and documented workflows.
+
+## Final Submission – 22.05.2026
+
+### Final System Description and Goal
+
+The final system is an AI-assisted Study Agent developed in Python. The purpose of the system is to help students obtain information from study materials and perform simple calculations through an agent-based workflow.
+
+The system receives user input, determines the required action, selects an appropriate tool, processes the request, and returns a meaningful response. The project demonstrates how an intelligent software component can coordinate multiple tools to solve practical tasks.
+
+### Final Programming Concepts and Their Usage
+
+The project uses several programming concepts:
+
+- Classes and objects: used to implement the StudyAgent component.
+- Functions: used to implement reusable tool functionality.
+- Modules and packages: used to separate the project into logical components.
+- File handling: used to read study notes from local text files.
+- Conditional statements: used for decision-making inside the agent workflow.
+- String processing: used to analyse and process user requests.
+- Lists: used to store and return search results.
+- Error handling: used to manage invalid calculations safely.
+- Input validation: used to verify user requests before processing.
+- Automated testing: implemented using pytest to verify correctness.
+- Git and GitHub: used for version control and project management.
+
+### Final Tools and Their Role
+
+The system integrates several tools:
+
+1. Calculator Tool
+   - Performs mathematical calculations.
+   - Used when the user requests arithmetic operations.
+
+2. File Reader Tool
+   - Reads study notes stored in local text files.
+   - Provides information for further processing.
+
+3. Keyword Search Tool
+   - Searches study notes for relevant information.
+   - Returns matching content to the user.
+
+4. Validation Utility
+   - Checks whether user input is valid.
+   - Prevents invalid requests from being processed.
+
+The agent coordinates all tools and determines which tool should be used based on the user request.
+
+### Final Testing Results and Conclusions
+
+Testing was performed throughout development using both manual and automated methods.
+
+Implemented test scenarios:
+
+- Calculator operation test
+- Invalid calculation test
+- Keyword search test
+- Empty input validation test
+- Agent calculation workflow test
+- Unknown question handling test
+
+Automated testing was implemented using pytest.
+
+Final testing results:
+
+- Total tests executed: 6
+- Tests passed: 6
+- Tests failed: 0
+
+The testing process confirmed that the system behaves correctly under both normal and invalid input conditions.
+
+### Final Deployment Preparation Description
+
+The project is prepared for deployment as a local command-line application.
+
+Deployment requirements:
+
+1. Python 3 installed.
+2. Dependencies installed using:
+
+   pip install -r requirements.txt
+
+3. Application execution:
+
+   python -m src.main
+
+The repository includes:
+
+- source code,
+- automated tests,
+- project documentation,
+- requirements.txt,
+- startup instructions.
+
+### Deployment Strategy
+
+The selected deployment strategy is a local command-line application.
+
+This strategy is suitable because the system is lightweight, easy to install, and simple to test. Future versions could be deployed as:
+
+- a web application,
+- an API service,
+- a cloud-hosted study assistant.
+
+A staged deployment approach would be recommended, where testing is completed before releasing the application to end users.
